@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
+:root{
+    --card-bg-color: rgb(20, 18, 31);
+    --email-color: rgb(92, 192, 211);
+    --name-color: rgb(255, 255, 253);
+    --job-color: rgb(217, 215, 217);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.clearfix::after{
+    content: ""; 
+    display: table;
+    clear: both;
+}
+
+/*Layout*/
+
+#general-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+   margin: 2rem 0 2.5rem;
+   text-align: center; 
+}
+
+header h1{
+   margin-bottom: 3rem;
+   color: rgb(217, 53, 110);
+}
+
+
+.card{
+    float: left;
+    width: calc((100% - 4rem)/3);
+    background-color: var(--card-bg-color);
+    height: 80px;
+    
+}
+
+div.info{
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    padding: .5rem 0;
+    line-height: calc((80px - 1rem)/3);
+}
+
+.info h2{
+    color: var(--name-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.info .job{
+    color: var(--job-color);
+    font-size: .8rem;
+}
+
+.info .email{
+    color: var(--email-color);
+    font-size: .8rem;
+}
+
+div img{
+    height: 100% ;
+}
+
+section{
+    margin-bottom: 2.5rem ;
+}
+
+.central{
+    margin: 0 2rem;
+}
+
+footer{
+    text-align: center;
+}
